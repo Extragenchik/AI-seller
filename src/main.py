@@ -8,7 +8,9 @@ if __name__ == "__main__":
     current_file_path = os.path.abspath(__file__)
     project_root = os.path.dirname(os.path.dirname(current_file_path))
     log_dir = os.path.join(project_root, "logs")
+    data_dit = os.path.join(project_root, "data")
     os.makedirs(log_dir, exist_ok=True)
+    os.makedirs(data_dit, exist_ok=True)
 
     logging.basicConfig(
         level=logging.INFO,
